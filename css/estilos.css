@@ -1,0 +1,124 @@
+body{
+     background-color:#f2f2f2;
+     font-family: 'Raleway', sans-serif;
+}
+.contenedorSombra{
+     background-color:#fff;
+    /* padding: 5px; */
+    max-width: 90%;
+    border-radius: 5px;
+    /* margin: 0 auto; */
+    /* border:transparent ; */
+    /* box-shadow: 10px 15px 15px #dcb9ef; */
+}
+.animar{
+    /* border: rgba(217, 47, 236, 1) 3px solid; */
+    box-shadow:10px 20px 10px #e4b722;
+}
+
+
+/* SEGUNDO GRUPO TARJETAS */
+.contenedores{
+    background-color:#fff;
+   /* padding: 5px; */
+   max-width: 90%;
+   border-radius: 5px;
+   /* margin: 0 auto; */
+   border:#e4b722 solid 6px;
+   /* box-shadow: 10px 15px 15px #d4f568; */
+}
+.animar2{
+   border: #eee234 solid 6px;
+   /* box-shadow:20px 20px 30px #9333ec; */
+}
+
+.telefono{
+    /* border: rgba(217, 47, 236, 1) 3px solid; */
+    box-shadow:10px 20px 10px #f81111;
+}
+
+
+
+/* GALERIA CON OPACIDAD */
+.galeria {
+	width: 90%;
+	/* max-width: 1400px; */
+	margin: auto;
+	/* El overflow sirve para trabajar con float
+	SE LE PONE AL CONTENEDOR PADRE*/
+	overflow: hidden;
+}
+
+h3{
+	font-size: 40px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+main .galeria .foto {
+	width: 25%;
+	float: left;
+}
+
+main .galeria .foto img {
+	vertical-align: top;
+	width: 100%;
+	opacity: 0.6;
+}
+
+main .galeria .foto img:hover {
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+@media screen and (max-width: 800px) {
+	header .contenedor {
+		/* position: static;
+		height: auto; */
+	/* Tiene position: relative
+	y heigth de 700 px */
+	}
+
+	header .textos {
+		position: static;
+		margin: 100px 0;
+	}
+	header .menu {
+		text-align: center;
+	}
+	header .menu a {
+		margin: 10px 20px;
+	}
+	header .textos .nombre {
+		font-size: 30px;
+	}
+	header .textos h3 {
+		font-size: 18px;
+	}
+	.main .acerca-de .foto {
+		position: relative;
+		width: 100%;
+	}
+	.main .acerca-de article {
+		position: relative;
+		width: 100%;
+		top:-50px;
+		transform: translate(0px, 0);
+		/* Es para trabajar con JQuery */
+	}
+
+	main .galeria .foto {
+		width: 50%;
+	}
+
+	.main .mapa {
+		width: 80%;
+		margin: auto;
+	}
+}
+
